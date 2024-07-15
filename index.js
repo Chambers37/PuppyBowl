@@ -1,11 +1,11 @@
 // TODO -
 // style with css
-// Observe a player's details.
 
 
 
 // COMPLETED -
 // View the roster.
+// Observe a player's details.
 
 const state = {}
 
