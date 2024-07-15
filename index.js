@@ -36,6 +36,9 @@ const displayPlayers = () => {
   const main = document.querySelector("main");
 
   main.innerHTML = `
+  <h3>Here is our current roster!</h3>
+  <p>Click any name to review their player card!</p>
+
   <ol></ol>
   `;
 
@@ -70,16 +73,18 @@ const showPlayerDetails = playerName => {
 
   main.innerHTML = `
   <section>
-  <img src="${imageURL}" height=250px width=auto>
+  <img src="${imageURL}">
   <h2>${playerName}</h2>
-  <ul>
-    <li>${breed}</li>
-    <li>${status}</li>
-    <br>
-    
+  
+    <strong>Breed:</strong> ${breed}
+    <br><br>
+    <strong>Status:</strong> ${status}
+    <br>  <br>  
+  
+  
   <button>Go Back to Roster</button>
-  </ul>
   </section>
+  
   `
 
   const button = document.querySelector("button");
